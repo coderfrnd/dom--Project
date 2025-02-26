@@ -51,3 +51,12 @@
     height: 40px;
     margin: 2%;
 }
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    color: white;
+    background-color: black;
+    width: 10%;
+    text-align: center;
+}
