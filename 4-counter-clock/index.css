@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Optional: Prevents unwanted layout shifts */
+  }
+ 
+.header{
+    height: 80px;
+    width: 100vw;
+    background-color: aqua;
+} 
+.header h1{
+    height: 100%;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    padding: 1%;
+}
+.ip-block{
+    font-size: larger;
+    text-align: center;
+}
+#zero{
+    font-size: 70px;
+}
+#btn-div{
+    padding: 1%
+}
+.plus{
+    height: 60px;
+    width: 80px;
+    margin: 1%;
+}
+.negative{
+    height: 60px;
+    width: 80px;
+}
+#num{
+    height: 30px;
+    text-align: center;
+    font-size: larger;
+}
+.take-ip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1%; */
+}
+#btn{
+    width: 120px;
+    height: 40px;
+    margin: 2%;
+}
