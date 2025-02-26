@@ -1,0 +1,72 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 5px;
+}
+.Heading{
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+}
+.ip{
+    margin: 10px;
+    height: 25px;
+
+}
+#btn{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    height: 40px;
+    border-radius: 3%;
+}
+.value{
+    display: flex;
+}
+.about {
+width: 100%;
+max-width: 400px; /* Adjust as needed */
+margin: 20px auto;
+text-align: center;
+font-family: Arial, sans-serif;
+}
+
+.about p {
+font-size: 20px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.bmi-table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 10px;
+}
+
+.bmi-table th, .bmi-table td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: center;
+}
+
+.bmi-table th {
+background-color: #4CAF50;
+color: white;
+}
+
+.bmi-table tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+.bmi-table tr:hover {
+background-color: #ddd;
+}
