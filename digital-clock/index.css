@@ -1,0 +1,34 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+.first-div{
+   height: 60px;
+   width: 600px;
+   background-color: yellow;
+   color: red;
+}
+#btn{
+    height: 40px;
+    width: 200px;
+    margin: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+    border-color: black;
+}
+#time{
+   padding: 15px;
+   font-size: large;
+   text-align: center;
+}
