@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 10px;
+    }
+    .ip{
+        margin: 10px;
+    }
+    #btn{
+        background-color: black;
+        color: white;
+        padding: 5px;
+    }
+    .value{
+        display: flex;
+    }
+    .about {
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.about p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bmi-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.bmi-table th, .bmi-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.bmi-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.bmi-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.bmi-table tr:hover {
+  background-color: #ddd;
+}
+
+</style>
+<body>
+    <div id = "Heading">
+     <p>BMI Calculation</p>
+    </div>
+    <div class="container">
+        <input type="number" id ="height" class="ip" placeholder="Enter your Height in cm">
+        <input type="number" id ="weight" class="ip" placeholder="Enter Your weight in kg">
+        <button id="btn">Calculate</button>
+    </div>
+    <div class="value">
+    </div>
+    <div class="about">
+        <p>BMI Index Range</p>
+        <table class="bmi-table">
+          <tr>
+            <th>BMI Range</th>
+            <th>Category</th>
+          </tr>
+          <tr>
+            <td>Below 18.5</td>
+            <td>Underweight</td>
+          </tr>
+          <tr>
+            <td>18.5 - 24.9</td>
+            <td>✅ Normal (Healthy)</td>
+          </tr>
+          <tr>
+            <td>25 - 29.9</td>
+            <td>Overweight</td>
+          </tr>
+          <tr>
+            <td>30 - 34.9</td>
+            <td>Obesity (Class 1)</td>
+          </tr>
+          <tr>
+            <td>35 - 39.9</td>
+            <td>Obesity (Class 2)</td>
+          </tr>
+          <tr>
+            <td>40 and above</td>
+            <td>Severe Obesity (Class 3)</td>
+          </tr>
+        </table>
+      </div>
+      
+    <!-- <div class="container">
+        <input type="number" id ="height" class="ip" placeholder="Enter your Height in cm">
+        <input type="text" id ="weight" class="ip" placeholder="Enter Your weight in kg">
+        <button id="btn">Calculate</button>
+    </div> -->
+   <script src="./index.js"></script>
+  
+</body>
+</html>
