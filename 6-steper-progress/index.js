@@ -16,6 +16,10 @@ let counter = 0;
 let nextBtn = document.getElementById("next");
 let backBtn = document.getElementById("back");
 
+if (counter == 0) {
+  backBtn.disabled = true;
+}
+
 nextBtn.addEventListener("click", () => {
   if (arr[counter - 1]) {
     arr[counter - 1].style.backgroundColor = "Green";
@@ -32,7 +36,7 @@ nextBtn.addEventListener("click", () => {
     console.log(value);
   }
 
-  if (counter >= 4) {
+  if (counter > 4) {
     nextBtn.disabled = true;
   }
   if (counter > 0) {
