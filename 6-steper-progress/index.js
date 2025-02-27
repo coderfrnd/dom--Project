@@ -36,9 +36,6 @@ nextBtn.addEventListener("click", () => {
     console.log(value);
   }
 
-  if (counter > 4) {
-    nextBtn.disabled = true;
-  }
   if (counter > 0) {
     backBtn.disabled = false;
   }
@@ -58,9 +55,6 @@ backBtn.addEventListener("click", () => {
     value = parseInt(value) - parseInt(width);
     value = value + "%";
     colorBar.style.width = value;
-  }
-  if (counter <= 3) {
-    nextBtn.disabled = false;
   }
 
   if (counter == 0) {
