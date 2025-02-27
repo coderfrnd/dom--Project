@@ -7,30 +7,35 @@
     height: 100%;
     width: 100%;
   }
-
+.header{
+    height: 100px;
+    background-color: aqua;
+    width: 100vw;
+    text-align: center;
+    padding: 2%;
+}
   .main{
     border: 2px solid black;
     display: flex;
     justify-content: center;
-    /* justify-content: space-around; */
   }
   .common{
-    border-right: 2px solid black;
-     width: 30%;
+     width: 40%;
   }
   .values{
     list-style: none;
     font-size: 20px;
   }
   .values li{
-    padding: 2%;
+    /* padding: 1%; */
     width: 100%;
   }
   #ipbox{
     margin: 5%;
   }
   .center{
-    border-right: 1px solid black ;
+    border-right: 2px solid black ;
+    border-left: 2px solid black ;
     width: 10%;
     padding: 2%;
     display: flex;

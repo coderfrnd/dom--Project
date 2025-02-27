@@ -1,61 +1,60 @@
-let leftSide = document.querySelectorAll("#left");
-let rightSide = document.querySelectorAll("#right");
-let center = document.querySelectorAll("#center");
-let leftUlValue = leftSide[0].children[0];
-let rightUlValue = rightSide[0].children[0];
-let firstBtn = document.getElementById("first");
-let secondBtn = document.getElementById("second");
-let thirdBtn = document.getElementById("third");
-let fourthBtn = document.getElementById("fourth");
+let leftContainer = document.querySelectorAll("#left");
+let rightContainer = document.querySelectorAll("#right");
+let buttonContainer = document.querySelectorAll("#center");
+let leftList = leftContainer[0].children[0];
+let rightList = rightContainer[0].children[0];
+let moveAllToLeftBtn = document.getElementById("first");
+let moveSelectedToLeftBtn = document.getElementById("second");
+let moveAllToRightBtn = document.getElementById("third");
+let moveSelectedToRightBtn = document.getElementById("fourth");
 
-let leftArr = Array.from(leftUlValue.children);
+let leftItems = Array.from(leftList.children);
 
-function rightAll() {
-  firstBtn.addEventListener("click", () => {
-    let rightArr = Array.from(rightUlValue.children);
-    rightArr.forEach((ele) => {
-      ele.children[0].checked = false;
-      leftUlValue.appendChild(ele);
+function moveAllToLeft() {
+  moveAllToLeftBtn.addEventListener("click", () => {
+    let rightItems = Array.from(rightList.children);
+    rightItems.forEach((item) => {
+      item.children[0].checked = false;
+      leftList.appendChild(item);
     });
   });
 }
 
-function rightCheckedOnly() {
-  secondBtn.addEventListener("click", () => {
-    let rightArr = Array.from(rightUlValue.children);
-    rightArr.forEach((ele) => {
-      if (ele.children[0].checked) {
-        ele.children[0].checked = false;
-        leftUlValue.appendChild(ele);
+function moveSelectedToLeft() {
+  moveSelectedToLeftBtn.addEventListener("click", () => {
+    let rightItems = Array.from(rightList.children);
+    rightItems.forEach((item) => {
+      if (item.children[0].checked) {
+        item.children[0].checked = false;
+        leftList.appendChild(item);
       }
     });
   });
 }
 
-function leftCheckOnly() {
-  fourthBtn.addEventListener("click", () => {
-    let leftArr = Array.from(leftUlValue.children);
-    leftArr.forEach((ele) => {
-      if (ele.children[0].checked) {
-        ele.children[0].checked = false;
-        rightUlValue.appendChild(ele);
+function moveSelectedToRight() {
+  moveSelectedToRightBtn.addEventListener("click", () => {
+    let leftItems = Array.from(leftList.children);
+    leftItems.forEach((item) => {
+      if (item.children[0].checked) {
+        item.children[0].checked = false;
+        rightList.appendChild(item);
       }
     });
   });
 }
 
-function leftAll() {
-  thirdBtn.addEventListener("click", () => {
-    let leftArr = Array.from(leftUlValue.children);
-    leftArr.forEach((ele) => {
-      ele.children[0].checked = false;
-      rightUlValue.appendChild(ele);
+function moveAllToRight() {
+  moveAllToRightBtn.addEventListener("click", () => {
+    let leftItems = Array.from(leftList.children);
+    leftItems.forEach((item) => {
+      item.children[0].checked = false;
+      rightList.appendChild(item);
     });
   });
 }
 
-rightAll();
-rightCheckedOnly();
-leftAll();
-leftCheckOnly();
-// console.log(leftSide[0].children[0].children[2]);
+moveAllToLeft();
+moveSelectedToLeft();
+moveAllToRight();
+moveSelectedToRight();
