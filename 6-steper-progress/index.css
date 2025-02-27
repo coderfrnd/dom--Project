@@ -18,10 +18,8 @@
     display: flex;
     justify-content: space-evenly;
     padding: 3%;
-    /* padding: 5%; */
 }
 .num{
-    /* padding: 2%; */
     background-color: gray;
     border-radius: 50%;
     height: 50px;
