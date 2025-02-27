@@ -21,7 +21,6 @@ btn.addEventListener("click", () => {
   thirdli.appendChild(remove);
 
   firstli.classList.add("m-4", "p-4");
-
   secondli.classList.add(
     "m-4",
     "p-4",
@@ -51,9 +50,17 @@ btn.addEventListener("click", () => {
   final.appendChild(div);
   console.log(ul.outerHTML);
 
+  editList(edit, firstli);
+  remove.addEventListener("click", () => {
+    div.remove();
+  });
+});
+
+function editList(edit, firstli) {
   edit.addEventListener("click", () => {
     let ipbox = document.createElement("input");
     ipbox.type = "text";
+    ipbox.value = firstli.innerText;
     ipbox.classList.add("border", "border-black", "p-1");
     firstli.replaceWith(ipbox);
     ipbox.addEventListener("keydown", (event) => {
@@ -62,6 +69,7 @@ btn.addEventListener("click", () => {
         newli.classList.add("m-4", "p-4");
         newli.innerText = ipbox.value;
         ipbox.replaceWith(newli);
+        firstli = newli;
       }
     });
     ipbox.addEventListener("blur", () => {
@@ -69,9 +77,7 @@ btn.addEventListener("click", () => {
       newli.classList.add("m-4", "p-4");
       newli.innerText = ipbox.value;
       ipbox.replaceWith(newli);
+      firstli = newli;
     });
   });
-  remove.addEventListener("click", () => {
-    div.remove();
-  });
-});
+}
