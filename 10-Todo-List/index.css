@@ -4,7 +4,7 @@
     box-sizing: border-box; 
   }
   body{
-    background-color: rgb(127, 187, 255);
+    background-color: rgb(59, 147, 247);
     display: flex;
     justify-content: center;
   }
@@ -34,6 +34,8 @@
    justify-content: space-between;
    border-bottom: 1px solid rgb(168, 164, 164);
    font-family: 'Times New Roman', Times, serif;
+   font-weight: 500;
+   font-size: larger;
   }
   #input{
    height: 30px;
